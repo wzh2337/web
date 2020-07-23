@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+
+    <style>
+
+        /* border-style 边框样式: solid 实线 dotted 点线 dashed 虚线 double 双线 */
+        div{
+            width: 200px;
+            height: 200px;
+            border: 3px solid cadetblue;
+            -webkit-transition: all 2s ease-in;
+
+            /* margin 外边距 边框与边框之间的距离 auto当前div元素居中显示 */
+            /*margin: auto;*/
+
+            /* padding 内边距 内容和边框之间的距离 */
+            padding: 10px;
+
+        }
+
+        div:hover{
+            /* 边框角度 */
+            border-radius: 50%;
+
+            /*
+                box-shadow阴影
+                inset表示是内嵌，不写直接添加在外部
+                x轴偏移量  y轴偏移量 模糊半径 阴影面拓展 颜色
+            */
+            box-shadow: inset 20px 20px 10px 10px lightgray;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

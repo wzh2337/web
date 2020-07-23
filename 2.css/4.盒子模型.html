@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+
+    <style>
+
+        /*
+            块级元素和行内元素
+            1.块级：满行（独占一行，默认） 可以控制宽度和高度 div p h1~h6
+            2.行内：不产生换行效果。内容撑开宽度，不可控制宽高，随内容改变.
+            可以用行高line-height撑起来,但行标签img，textarea，input是可以设置宽和高并且有效的
+        */
+        .d{
+            width: 200px;
+            height: 200px;
+            /*
+            块级元素转换成行级元素：
+                 1.display: inline; 将块级元素变成行级元素，丢失原来设置的宽高
+                 2.display: inline-block; 将块级元素变成行级元素，但是保留原有的宽高
+             */
+            /*display: inline;*/
+            /*display: inline-block;*/
+        }
+
+        .d1{
+            background-color: maroon;
+            /* 3.display: none; 将当前元素隐藏，丢失原来的位置 */
+            /*display: none;*/
+
+            /*
+             1.visibility: hidden; 将当前元素隐藏，不丢失原来的位置
+             2.visibility: visible; 当前元素可见
+            */
+            visibility: hidden;
+        }
+        .d2{
+            background-color: lightblue;
+        }
+
+        /* 行级元素转换成块级元素： display: block;  将行级元素转换成块级元素 */
+        #t1{
+            display: block;
+            height: 30px;
+            margin: auto;
+        }
+
+        /* 可以用行高line-height撑起来 */
+        #t2{
+            line-height: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="text" id="t1" />
+    <div class="d d1"></div>
+    <div class="d d2"></div>
+    <input type="text" id="t2" />
+
+</body>
+</html>

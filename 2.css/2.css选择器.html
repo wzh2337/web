@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+
+    <style>
+
+        /* 1.通配符选择器（*） 选择匹配所有元素 */
+        /*
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        */
+
+        /* 2.元素选择器（E） 通过标签名来选择元素 */
+        /*h1{
+            color:darkolivegreen;
+        }*/
+        div{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 3.类选择器（.classname） 通过class的属性值来选择元素 */
+        /*.d1{
+            background-color: cornflowerblue;
+        }
+        .d2{
+            background-color: olive;
+        }*/
+
+        /* 4.id选择器（#id） 通过id属性值选择元素 */
+        /*#h1{
+            color: darkred;
+        }
+        #h2{
+            color: olive;
+        }
+        #h3{
+            color: lightblue;
+        }*/
+
+        /* 5.后代选择器（E 空格F） 选择E元素下所有的F选择器，无论是子元素还是子孙元素 */
+        /*.d1 li{
+            color:darkred;
+        }*/
+
+        /* 6.子元素选择器（E>F） 选择E元素的直接子元素F */
+        /*.d1>li{
+            color:darkred;
+        }*/
+
+        /* 7.相邻兄弟选择器（E+F） 具有相同父元素，选择E后面紧挨着的F元素 */
+        /*div+li{
+            color:darkred;
+        }*/
+
+        /* 8.通用兄弟选择器（E~F）, CSS3新增加一种选择器 具有相同父元素，选择E后面所有的F元素 */
+        /*div~li{
+            color:darkred;
+        }*/
+
+        /* 9.群组选择器（s1,s2,s3） */
+        /*#h1,.d2{
+            background-color: lightblue;
+        }*/
+
+        /* 10.属性选择器 标签名[class="xx"] */
+        div[class="d1"]{
+            background-color: lightblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="h" id="h1">Hello World</h1>
+    <h1 class="h" id="h2">Hello World</h1>
+    <h1 class="h" id="h3">Hello World</h1>
+
+    <div class="d1">
+        <ul>
+            <li>aaaaaa</li>
+            <li>bbbbbb</li>
+            <li>cccccc</li>
+        </ul>
+        <li>111111</li>
+        <li>222222</li>
+        <li>333333</li>
+    </div>
+    <li>菠萝</li>
+    <li>芒果</li>
+    <li>香蕉</li>
+
+    <div class="d2"></div>
+
+</body>
+</html>
