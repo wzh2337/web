@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>2.下拉菜单</title>
+
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+    	<div class="dropdown">
+        	<button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+            	下拉菜单
+                <span class="caret"></span>
+            </button>
+        	<ul class="dropdown-menu">
+            	<li><a href="#">体育</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">微博</a></li>
+                <li><a href="#">财经</a></li>
+            </ul>
+        </div>	
+        
+        <hr>
+        
+        <div class="dropdown">
+        	<button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">
+            	下拉菜单带标题
+                <span class="caret"></span>
+            </button>
+        	<ul class="dropdown-menu">
+            	<li class="dropdown-header"><a href="#">体育</a></li>
+                <li><a href="#">足球</a></li>
+                <li><a href="#">篮球</a></li>
+                <li><a href="#">排球</a></li>
+                <li class="dropdown-header"><a href="#">娱乐</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电影</a></li>                
+            </ul>
+        </div>
+        
+        <hr>
+        
+        <div class="dropdown">
+        	<button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown">
+            	下拉菜单带分割线
+                <span class="caret"></span>
+            </button>
+        	<ul class="dropdown-menu">
+            	<li><a href="#">体育</a></li>
+                <li class="disabled"><a href="#">娱乐</a></li>                
+                <li><a href="#">微博</a></li>
+                <li class="divider"></li>
+                <li><a href="#">财经</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

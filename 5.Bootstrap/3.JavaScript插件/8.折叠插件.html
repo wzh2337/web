@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap</title>
+
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+</head>
+
+<body>
+	<!-- 简单折叠 -->
+    <!--<div class="container">
+    
+    	<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">展开/折叠</button>        
+        <div id="demo" class="collapse in">
+        	折叠（Collapse）插件可以很容易地让页面区域折叠起来。无论您用它来创建折叠导航还是内容面板，它都允许很多内容选项。
+			如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+        </div>
+    
+    </div>-->
+
+
+   <!-- &lt;!&ndash; 折叠菜单 &ndash;&gt;
+    <div class="container">
+
+        &lt;!&ndash;面板组&ndash;&gt;
+        <div class="panel-group" id="accordion">
+            &lt;!&ndash;面板1&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#one" data-toggle="collapse">点解我展开折叠内容-第1部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="one" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            &lt;!&ndash;面板2&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#two" data-toggle="collapse">点解我展开折叠内容-第2部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="two" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            &lt;!&ndash;面板3&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#three" data-toggle="collapse">点解我展开折叠内容-第3部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="three" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>-->
+
+
+    <!-- 折叠菜单-拓展：同时只显示一个 -->
+    <div class="container">
+
+        <!--面板组-->
+        <div class="panel-group" id="accordion">
+            <!--面板1-->
+            <div class="panel panel-default">
+                <!--面板标题-->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#one" data-toggle="collapse" data-parent="#accordion">点解我展开折叠内容-第1部分</a>
+                    </h4>
+                </div>
+                <!--面板内容-->
+                <div id="one" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            <!--面板2-->
+            <div class="panel panel-default">
+                <!--面板标题-->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#two" data-toggle="collapse" data-parent="#accordion">点解我展开折叠内容-第2部分</a>
+                    </h4>
+                </div>
+                <!--面板内容-->
+                <div id="two" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            <!--面板3-->
+            <div class="panel panel-default">
+                <!--面板标题-->
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#three" data-toggle="collapse" data-parent="#accordion">点解我展开折叠内容-第3部分</a>
+                    </h4>
+                </div>
+                <!--面板内容-->
+                <div id="three" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 程序控制 -->
+    <!--<script type="text/javascript">
+
+        $(document).ready(function(e) {
+            $('#btn1').click(function(e) {
+                $('#one').collapse('show');
+            });
+
+            $('#btn2').click(function(e) {
+                $('#one').collapse('hide');
+            });
+
+            $('#btn3').click(function(e) {
+                $('#one').collapse('toggle');
+            });
+
+            //显示事件
+            $('#one').on('shown.bs.collapse',function(){
+                alert('内容被显示出来');
+            });
+        });
+
+    </script>
+
+    <div class="container">
+
+        <button id="btn1" type="button" class="btn btn-danger">显示</button>
+        <button id="btn2" type="button" class="btn btn-info">隐藏</button>
+        <button id="btn3" type="button" class="btn btn-primary">切换</button>
+
+        <br><br>
+
+        &lt;!&ndash;面板组&ndash;&gt;
+        <div class="panel-group" id="accordion">
+            &lt;!&ndash;面板1&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#one" data-toggle="collapse">点解我展开折叠内容-第1部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="one" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            &lt;!&ndash;面板2&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#two" data-toggle="collapse">点解我展开折叠内容-第2部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="two" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+            &lt;!&ndash;面板3&ndash;&gt;
+            <div class="panel panel-default">
+                &lt;!&ndash;面板标题&ndash;&gt;
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#three" data-toggle="collapse">点解我展开折叠内容-第3部分</a>
+                    </h4>
+                </div>
+                &lt;!&ndash;面板内容&ndash;&gt;
+                <div id="three" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>-->
+       
+</body>
+</html>

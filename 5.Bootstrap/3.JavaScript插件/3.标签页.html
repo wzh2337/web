@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>3.标签页</title>
+
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+</head>
+
+<body>
+	
+    <div class="container">
+    
+    	<!--标签页 nav-pills胶囊样式 -->
+    	<ul class="nav nav-tabs">
+        	<li class="active"><a href="#java" data-toggle="tab">Java</a></li>
+            <li><a href="#oracle" data-toggle="tab">Oracle</a></li>
+            <li><a href="#web" data-toggle="tab">Web</a></li>
+        </ul>
+        
+        <!--标签页的内容-->
+        <div class="tab-content">
+        	<div id="java" class="tab-pane active">Java Java Java Java Java Java Java Java Java Java Java Java Java Java </div>
+            <div id="oracle" class="tab-pane">Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle</div>
+            <div id="web" class="tab-pane">Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web Web </div>
+        </div>	    	
+    
+    </div>
+
+    <!-- 控制程序 -->
+    <!--<script type="text/javascript">
+
+        $(document).ready(function(e) {
+
+            /*$('#myTab a[href="#java"]').tab('show');
+            $('#myTab a:last').tab('show');
+            $('#myTab a:first').tab('show');
+            $('#myTab a:eq(3)').tab('show');*/
+
+            //事件处理
+            $('#myTab a[data-toggle="tab"]').on('shown.bs.tab',function(e){
+                alert('标签被激活：' + e.target.innerHTML + "，上一个标签：" + e.relatedTarget.innerHTML);
+            });
+
+        });
+
+    </script>-->
+
+    <!--<div class="container">
+
+        &lt;!&ndash;标签页&ndash;&gt;
+        <ul id="myTab" class="nav nav-tabs">
+            <li><a href="#java" data-toggle="tab">Java</a></li>
+            <li class="active"><a href="#oracle" data-toggle="tab">Oracle</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Web<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#html" data-toggle="tab">HTML</a></li>
+                    <li><a href="#css" data-toggle="tab">CSS</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        &lt;!&ndash;标签页的内容&ndash;&gt;
+        <div class="tab-content">
+            <div id="java" class="tab-pane fade">Java Java Java Java Java Java Java Java Java Java Java Java Java Java </div>
+            <div id="oracle" class="tab-pane fade in active">Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle Oracle</div>
+            <div id="html" class="tab-pane fade">HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML </div>
+            <div id="css" class="tab-pane fade">CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS</div>
+        </div>
+
+    </div>-->
+       
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>10.附加导航</title>
+
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+<style type="text/css">
+		ul.nav-tabs{
+            width: 200px;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        }
+        ul.nav-tabs li{
+            margin: 0;
+            border-top: 1px solid #ddd;
+        }
+        ul.nav-tabs li:first-child{
+            border-top: none;
+        }
+        ul.nav-tabs li a{
+            margin: 0;
+            padding: 8px 16px;
+            border-radius: 0;
+        }
+        ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+            color: #fff;
+            background: #0088cc;
+            border: 1px solid #0088cc;
+        }
+        ul.nav-tabs li:first-child a{
+            border-radius: 4px 4px 0 0;
+        }
+        ul.nav-tabs li:last-child a{
+            border-radius: 0 0 4px 4px;
+        }
+		
+		ul.nav-tabs.affix{
+            top: 30px; /* 此处设置导航距离顶端空白边距 */
+        }		
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollSpy">
+	
+    <div class="container">
+    	
+        <div class="jumbotron">
+        	<h2>附加导航操作</h2>
+        </div>
+        
+        <div class="row">
+        	<!--导航按钮-->
+        	<div class="col-md-3" id="myScrollSpy">            
+            	<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="160">
+                	<li class="active">
+                    	<a href="#section1">第1部分</a>
+                    </li>
+                    <li>
+                    	<a href="#section2">第2部分</a>
+                    </li>
+                    <li>
+                    	<a href="#section3">第3部分</a>
+                    </li>
+                    <li>
+                    	<a href="#section4">第4部分</a>
+                    </li>
+                    <li>
+                    	<a href="#section5">第5部分</a>
+                    </li>
+                </ul>
+            </div>                        
+            <!--具体内容-->
+            <div class="col-md-9">
+            	<h2 id="section1">第1部分</h2>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <h2 id="section2">第2部分</h2>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <h2 id="section3">第3部分</h2>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <h2 id="section4">第4部分</h2>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <h2 id="section5">第5部分</h2>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+                <p>
+                	附加导航（Affix）插件允许某个 <div> 固定在页面的某个位置。您也可以在打开或关闭使用该插件之间进行切换。一个常见的例子是社交图标。
+                    它们将在某个位置开始，但当页面点击某个标记，该 </div> 会锁定在某个位置，不会随着页面其他部分一起滚动。
+					如果您想要单独引用该插件的功能，那么您需要引用 affix.js。或者，正如 Bootstrap 插件概览 一章中所提到，
+                    您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+                </p>
+            </div>        
+        </div>
+    </div>
+       
+</body>
+</html>

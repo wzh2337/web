@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2.Bootstrap布局</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/docs.min.css"/>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- 栅格布局 -->
+    <div class="container">
+        <div class="row show-grid">
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        <div class="row show-grid">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <div class="row show-grid">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+    </div>
+
+    <!-- 流式布局 -->
+    <div class="container-fluid">
+        <div class="row show-grid">
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        <div class="row show-grid">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <div class="row show-grid">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+    </div>
+
+    <!-- 列偏移 -->
+    <div class="container">
+        <div class="row show-grid">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4 col-md-offset-4">col-md-4</div>
+        </div>
+        <div class="row show-grid">
+            <div class="col-md-6 col-md-offset-3">col-md-6</div>
+        </div>
+    </div>
+
+    <!-- 嵌套列 -->
+    <div class="container">
+        <div class="row show-grid">
+            <div class="col-md-6">col-md-6</div>
+            <div class="col-md-6">col-md-6
+                <div class="row">
+                    <div class="col-md-4">col-md-4</div>
+                    <div class="col-md-4">col-md-4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 列排序：用的少 -->
+    <div class="container">
+        <div class="row show-grid">
+            <div class="col-md-3 col-md-push-9">col-md-3</div>
+            <div class="col-md-9 col-md-pull-3">col-md-9</div>
+        </div>
+    </div>
+</body>
+</html>
