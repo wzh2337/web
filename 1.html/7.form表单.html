@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+</head>
+<body>
+    <form action="#">
+
+        <!--
+            disabled属性： 当前标签失效
+            readonly属性： 当前标签只读
+            required属性： 当前标签非空
+            autofocus属性： 当前标签自动获得焦点关注
+            placeholder属性：当前标签会有提示信息
+            maxlength属性：当前标签填写长度最大是10
+            pattern属性：当前标签中的值会根据指定的正则表达式来进行判断格式是否合法
+        -->
+        username:<input type="text" name="username" maxlength="10" pattern="^[0-9]*$" placeholder="请输入用户名" /><br>
+        password:<input type="password" name="password" required autofocus/><br>
+
+        <!-- 单选按钮 checked属性：当前项默认被选中 -->
+        sex:<input type="radio" name="sex" value="boy" checked/>男 &nbsp;&nbsp;
+            <input type="radio" name="sex" value="girl"/>女<br>
+
+        <!-- 多选按钮 checked属性：当前项默认被选中 -->
+        hobby:
+        <input type="checkbox" name="hobby" value="ball">篮球 &nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="music" checked >音乐 &nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="read">阅读
+
+        <br>
+
+        <!-- 下拉菜单 selected属性：当前项默认被选中 -->
+        address:
+        <select name="address">
+            <option value="wuxi">无锡</option>
+            <option value="anhui" selected>安徽</option>
+            <option value="hangzhou">杭州</option>
+        </select>
+
+        <br>
+        <!-- 邮箱 -->
+        <input type="email" name="email" placeholder="email"/>
+
+        <br>
+        <!-- 地址 -->
+        <input type="url" name="url" placeholder="url"/>
+
+        <br>
+        <!-- 数字 -->
+        <input type="number" name="number" placeholder="number"/>
+
+        <br>
+        <!-- 范围 -->
+        <input type="range" name="range" min="0" max="10" step="2" value="4"/>
+
+        <br>
+        <!-- 颜色 -->
+        <input type="color" name="color"/>
+
+        <br>
+        <!-- 文件上传 -->
+        <input type="file" name="pic" />
+
+        <br>
+        <!-- 文本域 -->
+        <textarea name="desc" rows="20" cols="20"></textarea>
+
+        <br>
+        <!-- submit 提交表单  reset 重置表单 -->
+        <input type="submit" value="注册" /> &nbsp;&nbsp; <input type="reset" value="重置" />
+
+    </form>
+</body>
+</html>

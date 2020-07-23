@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.列表标签</title>
+</head>
+<body>
+    <!--
+        ul无序列表，也就是说没有排列限制可以随意加li
+        type属性：默认表示实心小圆点，square表示前面符号是实心方形，circle空心圆形
+    -->
+    <ul type="square">
+        <li>天猫商城</li>
+        <li>天猫生鲜</li>
+        <li>天猫国际
+            <ul>
+                <li>德国站</li>
+                <li>韩国站</li>
+                <li>日本站</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--
+        ol有序列表，会按照你写的li前后依次排列
+	    type属性：默认是1,2,…，i就是i,ii,….，I和a和A
+	-->
+    <ol type="A">
+        <li>数学成绩</li>
+        <li>语文成绩</li>
+        <li>英语成绩</li>
+    </ol>
+
+    <!--
+        dl分层列表，会默认前后层级关系。
+        以 <dl> 标签开始。每个列表项以 <dt> 开始。每个列表项的定义以 <dd> 开始。
+    -->
+    <dl>
+        <dt>军事新闻
+            <dd>空军演戏</dd>
+            <dd>实战演戏</dd>
+            <dd>这不是演戏</dd>
+        </dt>
+        <dt>娱乐八卦
+            <dd>圈内秘闻</dd>
+            <dd>体坛新星</dd>
+        </dt>
+    </dl>
+
+</body>
+</html>
