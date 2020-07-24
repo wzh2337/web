@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换2D</title>
+
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            margin: auto;
+            transition: all 1s linear 0s;
+        }
+
+        div:hover{
+            /* transform: translate(left,top) 进行移动 ，将元素向下移动top的值(y轴)，向右移动left的值(x轴) */
+            /*transform: translate(200px,200px);*/
+
+            /* transform: rotate(度数deg) 旋转度数 */
+            transform: rotate(30deg);
+        }
+
+        img{
+            transition: all 1s linear 0s;
+        }
+
+        img:hover{
+            /* transform: scale(w,h) 缩放对应的比例 */
+            transform: scale(1.5,1.5);
+
+            /* transform: 通过skew(x,y)方法，元素翻转给定的角度，围绕 X 轴把元素翻转 x 度，围绕 Y 轴翻转 y 度 */
+            /*transform: skew(30deg,0deg);*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <img src="img/TV.png" />
+</body>
+</html>
