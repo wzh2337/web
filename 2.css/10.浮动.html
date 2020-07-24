@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+
+    <style>
+
+        .d{
+            width: 200px;
+            height: 200px;
+        }
+
+        .d1{
+            background-color: lightblue;
+            /* 向右浮动，脱离文档流 */
+            float: right;
+        }
+
+        .d2{
+            background-color: brown;
+            /* 向左浮动，脱离文档流 */
+            float:left;
+        }
+
+        .d3{
+            background-color: darkolivegreen;
+            height: 300px;
+            /* 清除上方浮动  right  left  both清除上方所有浮动 */
+            clear: both;
+        }
+
+        /* 去除li样式 */
+        ul li{
+            list-style: none;
+            /* 将li节点左浮，并设置外边距，目的产生间隔 */
+            float:left;
+            margin-left: 30px;
+        }
+
+        /* 去除a样式 */
+        li a{
+            text-decoration: none;
+            color: darkolivegreen;
+            font-size: 20px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="d d1"></div>
+    <div class="d d2"></div>
+    <div class="d d3"></div>
+
+
+    <ul>
+        <li><a href="#">天猫国际</a></li>
+        <li><a href="#">天猫超市</a></li>
+        <li><a href="#">天猫小店</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+
+</body>
+</html>
