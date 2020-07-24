@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习2</title>
+
+    <style>
+
+        /* 让所有的li元素丢失原来的样式 */
+        ul li{
+            list-style: none;
+        }
+
+        /* 让二级菜单消失 */
+        .u2{
+            display: none;
+            position: fixed;
+        }
+
+        /* 让一级菜单左浮 */
+        .u1>li{
+            float: left;
+            margin-left: 30px;
+        }
+
+        /* 当一级菜单鼠标悬浮时，显示二级菜单 */
+        .u1>li:hover .u2{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <ul class="u1">
+        <li>奶茶
+            <ul class="u2">
+               <li>珍珠奶茶</li>
+               <li>波波奶茶</li>
+               <li>芋泥奶茶</li>
+            </ul>
+        </li>
+        <li>果茶
+            <ul class="u2">
+                <li>夏威夷果茶</li>
+                <li>梅梅红果果</li>
+                <li>杨枝甘露</li>
+            </ul>
+        </li>
+        <li>咖啡
+            <ul class="u2">
+                <li>美式咖啡</li>
+                <li>拿铁咖啡</li>
+                <li>摩卡咖啡</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

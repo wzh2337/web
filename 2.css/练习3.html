@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习3</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .left{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            /* 边框样式 */
+            border-style: solid;
+            /* 边框的粗细 */
+            border-width: 70px 150px;
+            /* 边框颜色 transparent根据父级元素来定 */
+            border-color: transparent transparent white white;
+        }
+
+        .right{
+            position: absolute;
+            right: -400px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            /* 边框样式 */
+            border-style: solid;
+            /* 边框的粗细 */
+            border-width: 70px 120px;
+            /* 边框颜色 transparent根据父级元素来定 */
+            border-color: transparent teal teal transparent;
+            /* 设置透明度 */
+            opacity: 0;
+            transition: all 2s linear;
+        }
+
+        .outer img:hover~.right{
+            right:0px;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <img src="img/file1.jpg"/>
+        <!-- 左边的三角形 -->
+        <div class="left"></div>
+        <!-- 右边的三角形 -->
+        <div class="right"></div>
+    </div>
+
+</body>
+</html>
