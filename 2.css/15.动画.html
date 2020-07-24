@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            position: absolute;
+            left: 0;
+            right: 0;
+            /*
+                添加动画
+                animation: 自定义的动画名称 完成动画的时间，单位秒  匀速linear  默认运动1次，指定无数次infinite 反向reverse;
+             */
+            animation: myframes 5s linear infinite reverse;
+            /* 谷歌浏览器版本问题，可以加上 -webkit  */
+            -webkit-animation: myframes 5s linear infinite reverse;
+        }
+
+        /* 定义动画 */
+        @keyframes myframes{
+            25% { background-color: olive;top:0;left: 300px }
+            50% { background-color: maroon;top:300px;left: 300px }
+            75% { background-color: cadetblue;top:300px;left: 0px }
+            100% { background-color: lightcoral;top:0px;left: 0px }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

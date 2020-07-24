@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.伪类选择器</title>
+
+    <style>
+
+        /*
+        伪类选择器：并不是自定义的class属性，而是已经声明好的class
+
+        1.锚点（超链接）伪类选择器
+            :link连接跳转前
+            :visited连接被访问后
+
+        2.行为伪类选择器
+            :hover鼠标指针放在连接上
+            :active鼠标按下
+
+        3.输入框伪类选择器
+            :focus 只适用于输入框
+        */
+
+        /* 在超链接上，遵循原则：爱love恨hate原则  */
+        a:link{
+            background-color: lightblue;
+        }
+        a:visited{
+            background-color: darkseagreen;
+        }
+        a:hover{
+            color: darkred;
+        }
+        a:active{
+            color: green;
+        }
+
+        /* 在div上添加鼠标悬浮效果 */
+        .d1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+        }
+        .d1:hover{
+            background-color: darkred;
+        }
+
+        /* 输入框上添加获得焦点关注效果 */
+        #text:focus{
+            background-color: lightblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <a href="#">我的作品，哈哈哈</a>
+    <div class="d1"></div>
+    <input type="text" id="text" placeholder="请输入用户名"/>
+
+</body>
+</html>

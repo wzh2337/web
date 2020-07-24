@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习2</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <table align="center">
+
+            <tr align="center">
+                <th colspan="2">用户注册</th>
+            </tr>
+
+            <!-- 身份验证-必填信息 -->
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>身份验证-必填信息</legend>
+                        <table>
+                            <tr>
+                                <td align="right">用户名</td>
+                                <td><input type="text" placeholder="请填写用户名" name="username"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">密码</td>
+                                <td><input type="password" name="password"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">确认密码</td>
+                                <td><input type="password" name="repassword"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- 身份信息-选填信息 -->
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>身份信息-选填信息</legend>
+                        <table>
+                            <tr>
+                                <td>所在城市</td>
+                                <td><input type="text" placeholder="请填写所在城市" name="city"></td>
+                            </tr>
+                            <tr>
+                                <td>工作单位</td>
+                                <td><input type="text" placeholder="请填写工作单位" name="company"></td>
+                            </tr>
+                            <tr>
+                                <td>家庭住址</td>
+                                <td><input type="text" placeholder="请填写家庭住址" name="address"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- 其它个人信息 -->
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>其它个人信息</legend>
+                        <table>
+                            <tr>
+                                <td>性别</td>
+                                <td>
+                                    <select name="gender">
+                                        <option value="男">男</option>
+                                        <option value="女" selected>女</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>爱好</td>
+                                <td>
+                                    <input type="checkbox" name="hobby" value="music">音乐
+                                    <input type="checkbox" name="hobby" value="sports">体育
+                                    <input type="checkbox" name="hobby" value="code" checked>计算机
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>喜欢的公司</td>
+                                <td>
+                                    <input type="radio" name="lovecompany" value="baidu" checked>百度
+                                    <input type="radio" name="lovecompany" value="soft">微软
+                                    <input type="radio" name="lovecompany" value="igeekhome">极客营
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>个人简介</td>
+                                <td>
+                                    <textarea name="desc" cols="10" rows="10"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- 按钮 -->
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="提交您的资料">
+                    <input type="reset" value="重新填写资料">
+                </td>
+            </tr>
+
+            <!-- 无效按钮 -->
+            <tr align="center">
+                <td><input type="button" value="无效按钮" disabled></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>

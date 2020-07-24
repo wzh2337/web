@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+<body>
+    <!--
+        form表单 收集输入框中的值，只会收集有name属性
+        action属性：指定提交到哪个后台
+        method属性：表单提交方式
+            - get  : 默认使用get方式，会在地址栏上追加表单输入的值，相对说不安全，数据暴露出来的
+                     不使用此方式去提交密码等私密数据，不提交大量数据
+            - post : 指定method="post"，一般使用较多，可以提交大量数据及私密数据，不会再地址栏上追加信息
+    -->
+    <form class="loginForm" action="#" method="post">
+        <fieldset>
+            <legend>身份验证-必填信息</legend>
+            <table border="1px" cellspacing="0" cellpadding="20px" align="center">
+                <tr>
+                    <th colspan="2">登录界面</th>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <!-- input type属性：text ，普通的文本输入框 -->
+                    <td><input type="text" class="username" name="username" placeholder="username"/></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <!-- input type属性：password ，密码输入框 -->
+                    <td><input type="password" class="password" name="pwd" placeholder="password" /></td>
+                </tr>
+                <tr>
+                    <!-- input type属性：submit ，提交按钮，会自动提交表单 -->
+                    <th colspan="2"><input type="submit" value="登录"/></th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

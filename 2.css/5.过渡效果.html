@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡效果</title>
+
+    <style>
+
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+
+            /*
+                过渡效果 transition
+                1.第一个值：哪些属性width添加过渡效果  all给所有属性添加效果
+                2.第二个值：整个变化过程需要持续多久 单位秒s
+                3.第三个值：过渡效果的时间曲线 linear匀速变化  ease由快变慢  ease-in由慢变快
+                4.第四个值：延迟时间 单位秒s
+             */
+            transition: all 3s linear 3s;
+        }
+
+        div:hover{
+            width: 300px;
+            background-color: darkblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>

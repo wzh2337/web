@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+    <!--
+合并单元格：
+    行跨列：一行跨多列，colspan
+    列跨行：一列跨多行，rowspan
+ -->
+
+    <!--
+        标签：table表格  tr行  th单元格（表头）td单元格
+        属性：border属性：边框属性  cellspacing属性：单元格与外部边框之间的间距   cellpadding属性：单元格内容与内边框之间的间距
+    -->
+    <table border="1px" cellspacing="0px" cellpadding="10px">
+        <tr>
+            <th colspan="6">学生信息</th>
+        </tr>
+        <tr>
+            <th rowspan="5">欢迎大家</th>
+        </tr>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>password</th>
+            <th>address</th>
+            <th>pic</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>123</td>
+            <td>江苏无锡</td>
+            <td><img src="img/mail.ico" width="64px" height="auto"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李四</td>
+            <td>111</td>
+            <td>安徽滁州</td>
+            <td><img src="img/TV.png" width="64px" height="auto" /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>王朝</td>
+            <td>222</td>
+            <td>宋朝</td>
+            <td><img src="img/TV.png" width="64px" height="auto" /></td>
+        </tr>
+    </table>
+
+</body>
+</html>

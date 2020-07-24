@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+        }
+
+        .d1{
+            /*
+                background 背景
+                url("img/border.png")  加载图片的路径
+                no-repeat  背景图片不可以重复
+                center  图片出现的位置
+            */
+            background: url("img/border.png") no-repeat center;
+        }
+
+        .d2{
+            background-color: lightblue;
+        }
+
+        .d3{
+            background-color: lightcoral;
+        }
+
+        body{
+
+            /* background-color  添加背景色 */
+            background-color: cadetblue;
+
+            /* background-image  背景图片，默认平铺 */
+            background-image: url("img/paris.jpg");
+
+            /* background-repeat:no-repeat;值为不平铺 */
+            background-repeat: no-repeat;
+
+            /* background-position: 出现位置   (left right)  (top bottom) 百分比%  px */
+            background-position: 100px 200px;
+
+            /* background-attachment 背景固定，值为：fixed */
+            background-attachment: fixed;
+
+            /* background-size:100%  背景尺寸 */
+            /*background-size: 100%;*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d3"></div>
+    <div class="d3"></div>
+    <div class="d3"></div>
+    <div class="d3"></div>
+</body>
+</html>

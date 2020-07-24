@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>颜色</title>
+
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+        }
+
+        /* 颜色:# 6位0~f的数表示 */
+        .d1{
+            background-color: #3c3c3c;
+        }
+
+        /* 颜色:英文单词 */
+        .d2{
+            background-color: lightcoral;
+        }
+
+        /* rgba(0~255,0~255,0~255,0~1) rgba red green blue 透明度*/
+        .d3{
+            background-color: rgba(120,60,90,0.4);
+        }
+
+        /*hsl  hue-saturation-lightness 色相（0~359） 饱和度（0~100%） 亮度（0~100%）
+        hsla 色相（0~359） 饱和度（0~100%） 亮度（0~100%） 透明度（0~1）*/
+        .d4{
+            background-color: hsla(330,50%,90%,0.8);
+        }
+
+        /* opacity 透明度 0~1 */
+        img{
+            opacity: 0.3;
+            transition: opacity 2s;
+        }
+        img:hover{
+            opacity: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+
+    <img src="img/paris.jpg" />
+
+</body>
+</html>
